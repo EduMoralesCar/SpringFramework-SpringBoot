@@ -1,0 +1,152 @@
+:root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f3f6fb;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --border: #dbe3ef;
+            --surface: #ffffff;
+            --row-alt: #f8faff;
+            --row-hover: #eaf2ff;
+            --shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 32px 18px;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            display: grid;
+            gap: 18px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+            color: #0f172a;
+            letter-spacing: 0.2px;
+        }
+
+        .description {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .table-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 620px;
+        }
+
+        th,
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        th {
+            font-size: 0.92rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-weight: 700;
+        }
+
+        thead {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: #fff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: var(--row-alt);
+        }
+
+        tbody tr:hover {
+            background-color: var(--row-hover);
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .empty-message {
+            background-color: #fff;
+            border: 1px dashed #9db8ef;
+            border-radius: 12px;
+            padding: 18px;
+            color: #1e3a8a;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            th,
+            td {
+                padding: 12px;
+            }
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 18px;
+            background-color: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        .button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        .button-group.start {
+            justify-content: flex-start;
+        }
+
+        .button-group.center {
+            justify-content: center;
+        }
+
+        .form-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            padding: 24px;
+        }

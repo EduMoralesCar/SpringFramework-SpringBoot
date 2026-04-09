@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/app.css}" href="/app.css">
+</head>
+<body>
+<main class="container">
+    <h1 th:text="${title}"></h1>
+    <p class="description">Listado de usuarios registrados en el sistema.</p>
+
+    <div th:if="${users.isEmpty()}" class="empty-message" th:text="'No existen usuarios registrados por el momento.'"></div>
+
+    <section th:if="${!users.isEmpty()}" class="table-card">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.lastName}"></td>
+                    <td th:text="${user.edad}"></td>
+                    <td th:if="${user.email}" th:text="${user.email}"></td>
+                    <td th:if="${user.email == null}" th:text="${'-'}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
