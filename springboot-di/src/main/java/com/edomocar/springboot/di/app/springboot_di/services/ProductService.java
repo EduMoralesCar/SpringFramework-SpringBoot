@@ -11,8 +11,9 @@ public class ProductService {
     public List<Product> findAll() {
         return repository.findAll().stream().map(p -> {
             Double precio = p.getPrecio() * 1.25d; // Aplicar un aumento del 25% al precio
-            p.setPrecio(precio.longValue());
-            return p;
+            Product newProduct = new Product(p.getId(), p.getNombre(), precio.longValue()); // Crear un nuevo producto con el precio actualizado
+            
+            return newProduct;
         }).collect(Collectors.toList());
     }
 
