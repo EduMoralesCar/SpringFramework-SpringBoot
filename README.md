@@ -1,11 +1,11 @@
 # Spring Framework & Spring Boot
 
 ## ⚙️ Tecnologías utilizadas
-- Java 17+
+- Java 21
 - Spring Framework 5
 - Spring Boot 3
-- Maven/Gradle
-- IDE: IntelliJ IDEA / Eclipse
+- Maven
+- IDE: Cursor/Visual Studio Code
 
 ## 🚀 Ejecución del proyecto
 1. Clonar el repositorio:
