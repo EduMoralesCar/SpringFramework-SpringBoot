@@ -11,3 +11,6 @@
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/EduMoralesCar/SpringFramework-SpringBoot.git
+   # Acceder a la ruta
+   cd SpringFramework-SpringBoot
+   ```
