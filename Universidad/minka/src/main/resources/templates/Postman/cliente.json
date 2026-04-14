@@ -1,0 +1,8 @@
+{
+    "id": "12345678",
+    "nombre": "Edu",
+    "apellidos": "Morales",
+    "celular": 999888777,
+    "direccion": "Calle Falsa 123",
+    "correoElectronico": "[EMAIL_ADDRESS]"
+}

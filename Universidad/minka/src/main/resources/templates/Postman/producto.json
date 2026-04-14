@@ -1,0 +1,8 @@
+{
+    "nombre": "Laptop Lenovo 2026",
+    "idCategoria": 1,
+    "codigoBarras": "1234567890",
+    "precioVenta": 99.99,
+    "cantidadStock": 10,
+    "estado": true
+}
