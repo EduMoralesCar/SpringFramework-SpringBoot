@@ -45,7 +45,7 @@ public class Product implements Cloneable {
         try {
             return super.clone();
         } catch (CloneNotSupportedException e) {
-            return new Product(this.getId(), this.getName(), getPrice());
+            return new Product(this.getId(), this.getNombre(), this.getPrecio());
         }
     }
 
