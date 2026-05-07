@@ -12,7 +12,7 @@ import com.edomocar.springboot.di.app.springboot_di.services.ProductService;
 
 
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping("/api")
 public class SomeController {
 
 
