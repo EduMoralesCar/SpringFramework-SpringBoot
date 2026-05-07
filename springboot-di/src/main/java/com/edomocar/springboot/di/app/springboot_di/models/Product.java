@@ -1,6 +1,6 @@
 package com.edomocar.springboot.di.app.springboot_di.models;
 
-public class Product {
+public class Product implements Cloneable {
     private Long id;
     private String nombre;
     private double precio;
@@ -39,4 +39,14 @@ public class Product {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+     @Override
+    public Object clone()  {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            return new Product(this.getId(), this.getName(), getPrice());
+        }
+    }
+
 }
