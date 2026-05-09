@@ -93,3 +93,17 @@ java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 ```
 
+### Opción 2: Ejecutar Directamente con Maven (Spring Boot Plugin)
+
+**Windows (CMD/PowerShell):**
+```cmd
+.\mvnw.cmd spring-boot:run
+```
+
+**Linux/Mac:**
+```bash
+./mvnw spring-boot:run
+```
+
+---
+
