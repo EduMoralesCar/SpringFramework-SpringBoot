@@ -76,3 +76,20 @@ Para ejecutar los tres pasos (clean, package, install) en secuencia:
 ```
 
 ---
+
+## Ejecución de la Aplicación
+
+### Opción 1: Ejecutar el JAR Generado
+
+Una vez compilado el proyecto, ejecuta:
+
+**Windows (CMD/PowerShell):**
+```cmd
+java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
+```
+
+**Linux/Mac:**
+```bash
+java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
+```
+
