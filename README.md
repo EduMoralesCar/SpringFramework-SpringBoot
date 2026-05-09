@@ -55,3 +55,24 @@ Este comando instala el artefacto compilado en el repositorio Maven local.
 ```
 
 ---
+
+## Todas las Tareas en Una Sola Línea
+
+Para ejecutar los tres pasos (clean, package, install) en secuencia:
+
+**Windows (CMD/PowerShell):**
+```cmd
+.\mvnw.cmd clean package install
+```
+
+**Linux/Mac:**
+```bash
+./mvnw clean package install
+```
+
+**Con salto de pruebas (más rápido):**
+```cmd
+.\mvnw.cmd clean package install -DskipTests
+```
+
+---
