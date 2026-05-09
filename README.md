@@ -145,3 +145,31 @@ Guarda esto como `deploy-run.bat` en la raíz del proyecto y ejecuta:
 ```cmd
 deploy-run.bat
 ```
+
+### Windows PowerShell - Script Completo
+
+Copia y pega lo siguiente en PowerShell:
+
+```powershell
+Write-Host "========================================" -ForegroundColor Green
+Write-Host "Iniciando despliegue de AplicationWeb" -ForegroundColor Green
+Write-Host "========================================" -ForegroundColor Green
+
+Write-Host "`n[PASO 1] Limpiando artefactos previos..." -ForegroundColor Cyan
+.\mvnw.cmd clean
+
+Write-Host "`n[PASO 2] Compilando y empaquetando..." -ForegroundColor Cyan
+.\mvnw.cmd package
+
+Write-Host "`n[PASO 3] Instalando en repositorio local..." -ForegroundColor Cyan
+.\mvnw.cmd install
+
+Write-Host "`n========================================" -ForegroundColor Green
+Write-Host "Despliegue completado exitosamente" -ForegroundColor Green
+Write-Host "========================================" -ForegroundColor Green
+
+Write-Host "`nIniciando aplicación..." -ForegroundColor Yellow
+java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
+```
+
+---
