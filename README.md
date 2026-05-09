@@ -107,3 +107,41 @@ java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 
 ---
 
+## Script Completo de Despliegue y Ejecución
+
+### Windows - Script Completo
+
+Copia y pega lo siguiente en PowerShell o CMD:
+
+```cmd
+@echo off
+echo ========================================
+echo Iniciando despliegue de AplicationWeb
+echo ========================================
+
+echo.
+echo [PASO 1] Limpiando artefactos previos...
+.\mvnw.cmd clean
+
+echo.
+echo [PASO 2] Compilando y empaquetando...
+.\mvnw.cmd package
+
+echo.
+echo [PASO 3] Instalando en repositorio local...
+.\mvnw.cmd install
+
+echo.
+echo ========================================
+echo Despliegue completado exitosamente
+echo ========================================
+
+echo.
+echo Iniciando aplicación...
+java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
+```
+
+Guarda esto como `deploy-run.bat` en la raíz del proyecto y ejecuta:
+```cmd
+deploy-run.bat
+```
