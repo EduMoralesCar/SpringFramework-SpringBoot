@@ -14,3 +14,17 @@
    # Acceder a la ruta
    cd SpringFramework-SpringBoot
    ```
+## Pasos de Despliegue
+
+### 1. Limpiar Artefactos Previos (Clean)
+Este comando elimina los archivos compilados y generados anteriormente.
+
+**Windows (CMD/PowerShell):**
+```cmd
+.\mvnw.cmd clean
+```
+
+**Linux/Mac:**
+```bash
+./mvnw clean
+```
