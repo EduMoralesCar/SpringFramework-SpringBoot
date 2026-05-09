@@ -28,3 +28,15 @@ Este comando elimina los archivos compilados y generados anteriormente.
 ```bash
 ./mvnw clean
 ```
+### 2. Compilar y Empaquetar (Package)
+Este comando compila el código, ejecuta pruebas (si las hay) y genera el archivo JAR.
+
+**Windows (CMD/PowerShell):**
+```cmd
+.\mvnw.cmd package
+```
+
+**Linux/Mac:**
+```bash
+./mvnw package
+```
