@@ -40,3 +40,18 @@ Este comando compila el código, ejecuta pruebas (si las hay) y genera el archiv
 ```bash
 ./mvnw package
 ```
+
+### 3. Instalar en Repositorio Local (Install)
+Este comando instala el artefacto compilado en el repositorio Maven local.
+
+**Windows (CMD/PowerShell):**
+```cmd
+.\mvnw.cmd install
+```
+
+**Linux/Mac:**
+```bash
+./mvnw install
+```
+
+---
