@@ -1,0 +1,10 @@
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (1, 'Tecnologia', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (2, 'Supermercado', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (3, 'Ropa y Accesorios', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (4, 'Hogar y Muebles', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (5, 'Deportes y Fitness', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (6, 'Juguetes y Bebés', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (7, 'Salud y Belleza', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (8, 'Herramientas y Construcción', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (9, 'Libros y Papelería', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
+INSERT INTO categorias (id_categoria, descripcion, estado) VALUES (10, 'Mascotas', true) ON DUPLICATE KEY UPDATE descripcion=descripcion;
