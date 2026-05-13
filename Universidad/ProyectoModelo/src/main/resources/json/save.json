@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Laptop HP Pavilion",
+    "categoryId": 1,
+    "barcode": "7501011122233",
+    "price": 850.50,
+    "stock": 15,
+    "active": true
+  },
+  {
+    "name": "Leche Deslactosada 1L",
+    "categoryId": 2,
+    "barcode": "7501022233344",
+    "price": 2.50,
+    "stock": 100,
+    "active": true
+  },
+  {
+    "name": "Zapatillas Nike Running",
+    "categoryId": 3,
+    "barcode": "7501033344455",
+    "price": 120.00,
+    "stock": 40,
+    "active": true
+  },
+  {
+    "name": "Sofa Cama 3 Plazas",
+    "categoryId": 4,
+    "barcode": "7501044455566",
+    "price": 350.00,
+    "stock": 10,
+    "active": true
+  },
+  {
+    "name": "Mancuernas 5Kg (Par)",
+    "categoryId": 5,
+    "barcode": "7501055566677",
+    "price": 35.00,
+    "stock": 25,
+    "active": true
+  },
+  {
+    "name": "Set LEGO Star Wars",
+    "categoryId": 6,
+    "barcode": "7501066677788",
+    "price": 85.00,
+    "stock": 12,
+    "active": true
+  },
+  {
+    "name": "Shampoo Pantene 500ml",
+    "categoryId": 7,
+    "barcode": "7501077788899",
+    "price": 6.80,
+    "stock": 60,
+    "active": true
+  },
+  {
+    "name": "Taladro Inalámbrico Bosch",
+    "categoryId": 8,
+    "barcode": "7501088899900",
+    "price": 140.00,
+    "stock": 8,
+    "active": true
+  },
+  {
+    "name": "Cuaderno Profesional Espiral",
+    "categoryId": 9,
+    "barcode": "7501099900011",
+    "price": 4.50,
+    "stock": 200,
+    "active": true
+  },
+  {
+    "name": "Alimento para Perro 20Kg",
+    "categoryId": 10,
+    "barcode": "7501100011122",
+    "price": 45.00,
+    "stock": 30,
+    "active": true
+  }
+]
