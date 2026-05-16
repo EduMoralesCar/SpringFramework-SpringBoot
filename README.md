@@ -6,32 +6,42 @@
   <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor IDE" />
 </div>
 
-<h1 align="center">☕ Spring Framework & Spring Boot - Base Repository</h1>
+<h1 align="center">☕ Spring Framework & Spring Boot</h1>
 
 <p align="center">
-  Estructura base, configuración y ciclo de vida de empaquetado para aplicaciones corporativas utilizando el ecosistema de Spring y Java moderno.
+  Estructura base, configuración y ciclo de vida de empaquetado para aplicaciones utilizando el ecosistema de Spring y Java moderno.
 </p>
 
 ---
 
-## ⚙️ Tecnologías utilizadas
-- Java 21
-- Spring Framework 5
-- Spring Boot 3
-- Maven
-- IDE: Cursor/Visual Studio Code
+## 🌟 Sobre el Proyecto
 
-## 🚀 Ejecución del proyecto
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/EduMoralesCar/SpringFramework-SpringBoot.git
-   # Acceder a la ruta
-   cd SpringFramework-SpringBoot
-   ```
-## Pasos de Despliegue
+Este repositorio centraliza las configuraciones iniciales, herramientas de automatización de construcción (**Maven Wrapper**) y comandos esenciales para el ciclo de vida de desarrollo en aplicaciones Spring. Está diseñado como plantilla inicial para garantizar un flujo de trabajo unificado en entornos locales y pipelines de desarrollo.
 
-### 1. Limpiar Artefactos Previos (Clean)
-Este comando elimina los archivos compilados y generados anteriormente.
+## ⚙️ Tecnologías Utilizadas
+
+- **Lenguaje:** Java 21
+- **Framework Core:** Spring Framework 6
+- **Ecosistema:** Spring Boot 3
+- **Gestor de Dependencias:** Apache Maven (vía `mvnw`)
+- **IDEs Recomendados:** Cursor / Visual Studio Code
+
+---
+
+## 🚀 Despliegue Local (Paso a Paso)
+
+Sigue estas instrucciones para clonar, compilar y ejecutar el proyecto en tu máquina utilizando el **Maven Wrapper** incluido (no necesitas tener Maven instalado globalmente).
+
+### 1. Clonar el Repositorio
+```bash
+git clone [https://github.com/EduMoralesCar/SpringFramework-SpringBoot.git](https://github.com/EduMoralesCar/SpringFramework-SpringBoot.git)
+cd SpringFramework-SpringBoot
+```
+
+### 2. Ciclo de Construcción y Gestión de Artefactos
+
+#### 🧼 Paso A: Limpiar Artefactos Previos (Clean)
+Elimina el directorio `target` y todos los archivos compilados en ejecuciones anteriores.
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -42,8 +52,9 @@ Este comando elimina los archivos compilados y generados anteriormente.
 ```bash
 ./mvnw clean
 ```
-### 2. Compilar y Empaquetar (Package)
-Este comando compila el código, ejecuta pruebas (si las hay) y genera el archivo JAR.
+
+#### 📦 Paso B: Compilar y Empaquetar (Package)
+Compila el código fuente, ejecuta las pruebas unitarias y genera el archivo comprimido ejecutable (`.jar`) en la carpeta `target`.
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -55,8 +66,8 @@ Este comando compila el código, ejecuta pruebas (si las hay) y genera el archiv
 ./mvnw package
 ```
 
-### 3. Instalar en Repositorio Local (Install)
-Este comando instala el artefacto compilado en el repositorio Maven local.
+#### 📥 Paso C: Instalar en Repositorio Local (Install)
+Empaqueta el proyecto y lo copia en tu repositorio local `.m2` para que pueda ser utilizado como dependencia por otros proyectos locales.
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -70,9 +81,9 @@ Este comando instala el artefacto compilado en el repositorio Maven local.
 
 ---
 
-## Todas las Tareas en Una Sola Línea
+## ⚡ Todas las Tareas en Una Sola Línea
 
-Para ejecutar los tres pasos (clean, package, install) en secuencia:
+Para ejecutar los tres pasos (`clean`, `package`, `install`) en secuencia de forma rápida:
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -84,18 +95,26 @@ Para ejecutar los tres pasos (clean, package, install) en secuencia:
 ./mvnw clean package install
 ```
 
-**Con salto de pruebas (más rápido):**
+🚀 **Con salto de pruebas (Ejecución más rápida):**
+
+**Windows (CMD/PowerShell):**
 ```cmd
 .\mvnw.cmd clean package install -DskipTests
 ```
 
+**Linux/Mac:**
+```bash
+./mvnw clean package install -DskipTests
+```
+
 ---
 
-## Ejecución de la Aplicación
+## 🏃‍♂️ Ejecución de la Aplicación
 
-### Opción 1: Ejecutar el JAR Generado
+Una vez que el proyecto se haya construido correctamente, puedes levantar el servidor de desarrollo mediante cualquiera de las siguientes dos opciones:
 
-Una vez compilado el proyecto, ejecuta:
+### Opción 1: Ejecutar el archivo JAR generado
+Ideal para simular el comportamiento de producción.
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -107,7 +126,8 @@ java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 ```
 
-### Opción 2: Ejecutar Directamente con Maven (Spring Boot Plugin)
+### Opción 2: Ejecutar directamente con Maven (Spring Boot Plugin)
+Ideal para desarrollo en tiempo real con recarga en caliente.
 
 **Windows (CMD/PowerShell):**
 ```cmd
@@ -118,5 +138,3 @@ java -jar target/AplicationWeb-0.0.1-SNAPSHOT.jar
 ```bash
 ./mvnw spring-boot:run
 ```
-
----
