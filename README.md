@@ -8,6 +8,12 @@
 
 <h1 align="center">☕ Spring Framework & Spring Boot - Base Repository</h1>
 
+<p align="center">
+  Estructura base, configuración y ciclo de vida de empaquetado para aplicaciones corporativas utilizando el ecosistema de Spring y Java moderno.
+</p>
+
+---
+
 ## ⚙️ Tecnologías utilizadas
 - Java 21
 - Spring Framework 5
