@@ -14,25 +14,6 @@
 
 ---
 
-## 🌟 Sobre el Proyecto
-
-El backend del **Proyecto Modelo** funciona como el núcleo central para la gestión del catálogo de productos y su categorización. Está diseñado bajo los principios de diseño de **Domain-Driven Design (DDD) básico** y el patrón **Data Mapper**. La aplicación separa estrictamente la capa de persistencia (Base de Datos) de la capa de dominio (Lógica) y de exposición (API REST) asegurando así escalabilidad y un código limpio.
-
-## ✨ Funcionalidades Principales
-
-El proyecto utiliza una base de datos relacional (**MySQL**) y estructura su información con el ORM de **Spring Data JPA**.
-
-### 🛍️ Módulo de Productos (CRUD Completo)
-- **Gestión Total:** Endpoints para crear, obtener, listar y eliminar productos.
-- **Consultas Específicas:** Filtros avanzados para buscar productos asociados a una categoría específica o identificar productos con stock bajo (escasos).
-- **Mapeo Automático:** Implementación de `MapStruct` para la conversión eficiente y segura entre Entidades JPA y los Objetos de Dominio (DTOs) que se envían al cliente.
-
-### 🗂️ Módulo de Categorías
-- **Inventario Relacional:** Relación estable entre productos y categorías (Tecnología, Supermercado, Ropa, etc.) respetando las restricciones de llave foránea de la base de datos.
-- **Autollenado Inicial:** Inserción automática de categorías predeterminadas al levantar la aplicación mediante scripts (`data.sql`).
-
----
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **Framework Web:** Spring Boot 3.4+
